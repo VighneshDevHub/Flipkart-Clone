@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --main-bg-color: #2874f0;
+    --transition-speed: 0.3s;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    height: 65px;
+    font-family: "Lato", sans-serif;
+
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 120px;
+    padding: 12px;
+}
+
+nav ul{
+    display: flex;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+nav ul li{
+    list-style: none;
+    padding:0 24px;
+   
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-weight: bolder;
+    color: #ffea00;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width: 30vw;
+    height: 29px;
+    border-radius: 5px;
+    margin: 0 16px 0px 56px;
+    padding: 0px 16px;
+}
+
+.search button{
+    font-family: "Lato", sans-serif;
+
+
+}
+
+.slider{
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.card{
+    max-width: 91vw;
+    margin: 37px auto;
+    background-color:#f5eeee;
+    font-family: "Lato", sans-serif;
+    border-radius: 10px;
+
+
+}
+
+.cards{
+    display: flex;
+    overflow-x:scroll;
+}
+
+
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #a29999;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+
+}
+
+
+
+.card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 18px 18px rgba(14, 13, 13, 0.2);
+    
+}
+
+.card-item img{
+    border-radius: 7px;
+}
+
+
+.card h2{
+    font-family: "Lato", sans-serif;
+    padding: 13px;
+    
+
+}
+
+
+
+.container{
+    min-height: calc(100vh - 60px - 10vh );
+}
+
+
+footer{
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: "Lato", sans-serif;
+
+}
